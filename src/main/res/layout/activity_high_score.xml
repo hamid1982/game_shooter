@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HighScoreActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/game_shooter_main_menu_background" />
+
+        <ImageView
+            android:layout_margin="16dp"
+            android:id="@+id/back"
+            android:src="@drawable/arrow_left_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/arr_plan"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iceberg_regular"
+            android:text="HIGH SCORE"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/null_high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Belum ada high score"
+            android:textColor="@android:color/holo_red_light" />
+
+        <LinearLayout
+            android:id="@+id/high_score_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/arr_plan"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="48dp"
+            android:paddingTop="16dp"
+            android:paddingRight="48dp"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCORE: "
+                    android:textColor="@android:color/holo_red_light"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginRight="30dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/meteor_1" />
+
+                <TextView
+                    android:id="@+id/meteor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x100"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginRight="30dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/enemy_red_1" />
+
+                <TextView
+                    android:id="@+id/enemy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x100"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
